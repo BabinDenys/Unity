@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
     [ SerializeField ] Text textComp;
+    public Button yourButton;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+	void Start () {
+		Button btn = yourButton.GetComponent<Button>();
+		btn.onClick.AddListener(TaskOnClick);
+	}
 
     // Update is called once per frame
     void Update()
@@ -18,16 +19,9 @@ public class NewBehaviourScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.UpArrow)) {
          Debug.Log(123);
         };
-
-        if(Input.GetButton("Button")) {
-           Debug.Log(123); 
-        }
-
-
-        
     }
 
-    // protected void OnMouseDown(Input){
-
-    // }
+	void TaskOnClick(){
+		Debug.Log ("You have clicked the button!");
+	}
 }
