@@ -7,21 +7,21 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [ SerializeField ] Text textComp;
     public Button yourButton;
+    Generator myScript;
 
 	void Start () {
 		Button btn = yourButton.GetComponent<Button>();
+        myScript = GetComponent<Generator>();
 		btn.onClick.AddListener(TaskOnClick);
 	}
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.UpArrow)) {
-         Debug.Log(123);
-        };
+    
     }
 
 	void TaskOnClick(){
-		Debug.Log ("You have clicked the button!");
+		Debug.Log (myScript.arr);
 	}
 }

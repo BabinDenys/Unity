@@ -55,7 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Apartment_Door\Scripts\DoorController.cs" />
+     <Compile Include="Assets\Apartment_Door\Scripts\KeyController.cs" />
+     <Compile Include="Assets\Apartment_Door\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\scriptes\Generator.cs" />
      <Compile Include="Assets\scriptes\NewBehaviourScript.cs" />
+     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/denba/Documents/Unity/DevApp/Bombs/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
